@@ -1,0 +1,9 @@
+{
+  "name": "Lone Notify",
+  "short_name": "LoneNotify",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f2248",
+  "theme_color": "#1b6ef3",
+  "icons": []
+}

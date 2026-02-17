@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#1b6ef3" />
+    <title>Lone Notify</title>
+    <link rel="manifest" href="manifest.json" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <h1>Lone Notify</h1>
+      <p class="subtitle">A mobile-friendly reminder app with changeable notification sound.</p>
+
+      <section class="card">
+        <label for="title">Notification title</label>
+        <input id="title" type="text" placeholder="Time to stretch" value="Reminder" />
+
+        <label for="message">Message</label>
+        <textarea id="message" rows="3" placeholder="Take a quick walk.">Stand up and move a little.</textarea>
+
+        <label for="delay">Delay (seconds)</label>
+        <input id="delay" type="number" min="1" value="10" />
+
+        <label for="sound">Notification sound</label>
+        <select id="sound">
+          <option value="chime">Chime</option>
+          <option value="bell">Bell</option>
+          <option value="beep">Beep</option>
+          <option value="soft">Soft</option>
+        </select>
+
+        <div class="actions">
+          <button id="previewSound" type="button">Preview sound</button>
+          <button id="requestPermission" type="button">Enable notifications</button>
+          <button id="scheduleNotification" type="button">Schedule notification</button>
+        </div>
+
+        <p id="status" class="status" aria-live="polite"></p>
+      </section>
+    </main>
+
+    <script src="app.js" defer></script>
+  </body>
+</html>
