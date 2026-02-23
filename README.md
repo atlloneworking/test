@@ -18,3 +18,20 @@ Then open `http://localhost:8000`.
 ## Notes for mobile
 - On iPhone, add to Home Screen from Safari for a more app-like experience.
 - Notification behavior depends on browser/OS support and permissions.
+
+## Inventory spreadsheet template
+A ready-to-use multi-sheet inventory workbook is included at:
+
+- `inventory_tracking_template.xml`
+
+It contains:
+- `A_Inventory_Tracking`
+- `B_Equipment_Tracking`
+- `C_Allocated_Tracking`
+- `D_Monthly_Figures`
+- `README` (usage notes)
+
+To regenerate it after edits:
+```bash
+python3 create_inventory_workbook.py
+```
